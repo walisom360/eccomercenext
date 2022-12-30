@@ -1,0 +1,37 @@
+import { createStitches } from "@stitches/react";
+
+export const {
+  styled,
+  css,
+  globalCss,
+  keyframes,
+  getCssText,
+  theme,
+  createTheme,
+  config,
+} = createStitches({
+  theme: {
+    colors: {
+      gray50: "#EDF3F6",
+      gray100: "#B4B8BD",
+      gray200: "#C4C4C4",
+      gray150: "#747474",
+      gray400: "#444D5B",
+      gray500: "#323A46",
+      gray900: "#131313",
+      button: "#242424",
+    },
+  },
+  media: {
+    desktopLG: "(max-width: 1500px)",
+    mobileLG: "(max-width: 550px)",
+  },
+
+  utils: {
+    marginX: (value: any) => ({ marginLeft: value, marginRight: value }),
+
+    marginY: (value: any) => ({ marginTop: value, marginBottom: value }),
+
+    pa: (value: any) => ({ padding: value }),
+  },
+});
